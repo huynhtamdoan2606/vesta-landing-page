@@ -44,7 +44,7 @@ npx serve .
 
 Mở `http://localhost:8080`.
 
-## 3. Các yêu cầu đã đáp ứng
+## 3. Tính năng & Trải nghiệm đã đáp ứng
 
 **Giao diện & UX**
 - Hero, tính năng nổi bật, thông số kỹ thuật, form đăng ký nhận tin (đủ 4 khối bắt buộc)
