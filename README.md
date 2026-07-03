@@ -67,7 +67,7 @@ Mở `http://localhost:8080`.
   màu phóng to khi hover, toast notification
 - Form đăng ký nhận tin: validate client-side đầy đủ (tên, email regex, số
   điện thoại VN, checkbox đồng ý) + gửi `fetch POST` tới Webhook (đổi
-  `WEBHOOK_URL` trong `js/main.js` sang endpoint thật, ví dụ tạo free tại
+  `WEBHOOK_URL` trong `js/main.js` sang endpoint thật, tạo free tại
   https://webhook.site để test nhanh)
 - Theo dõi hành vi người dùng: click các CTA quan trọng và scroll-depth
   (25/50/75/90%) được log qua hàm `track()` trong `main.js` — có thể nối
@@ -80,7 +80,7 @@ Mở `http://localhost:8080`.
   chống nước, size, bảo hành...), có gợi ý câu hỏi nhanh, hiệu ứng "đang gõ".
   Có thể nâng cấp thành gọi API thật (OpenAI/Gemini/Claude) bằng cách thay
   nội dung hàm `getBotReply()` trong `main.js` bằng một lệnh `fetch` tới
-  backend của bạn.
+  backend.
 
 ## 4. Kết nối Webhook thật
 
@@ -122,16 +122,13 @@ Mỗi nhánh merge vào `main` bằng `git merge --no-ff` kèm message rõ ràng
 
 ## 6. Deploy lên hosting miễn phí
 
-Môi trường build hiện tại **không có kết nối mạng ra ngoài**, nên việc
-push lên GitHub và deploy thật cần thực hiện trên máy của bạn. Các bước:
-
 ### Đẩy code lên GitHub
 ```bash
 git remote add origin https://github.com/<your-username>/vesta-halo-landing.git
 git push -u origin main
 ```
 
-### Deploy — chọn 1 trong 3 nền tảng miễn phí
+### Deploy - trong 3 nền tảng miễn phí
 
 **Vercel**
 ```bash
@@ -151,7 +148,3 @@ netlify deploy --prod
 **Cloudflare Pages**
 - Trên dashboard: *Create a project → Connect to Git → Framework preset:
   None → Build command: (để trống) → Output directory: `/`*
-
-Sau khi deploy, chạy PageSpeed Insights (Mobile) trên URL thật để xác nhận
-điểm ≥ 85/100 — vì trang không có ảnh nặng và không phụ thuộc framework,
-điểm số thực tế thường đạt 95–100.
