@@ -81,6 +81,10 @@ h1,h2,h3,h4,p{ margin:0; }
 .eyebrow::before{ content:""; width:22px; height:1px; background: var(--accent-gold); display:inline-block; }
 
 section{ position: relative; }
+.cv-auto{
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
 .section-pad{ padding: 120px 0; }
 @media (max-width: 780px){ .section-pad{ padding: 80px 0; } }
 
