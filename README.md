@@ -128,11 +128,11 @@ git remote add origin https://github.com/<your-username>/vesta-halo-landing.git
 git push -u origin main
 ```
 
-<<<<<<< Updated upstream
+
 ### Deploy - trong 3 nền tảng miễn phí
 =======
 ### Deploy — chọn trong 3 nền tảng miễn phí
->>>>>>> Stashed changes
+
 
 **Vercel**
 ```bash
@@ -151,8 +151,6 @@ netlify deploy --prod
 **Cloudflare Pages**
 - Trên dashboard: *Create a project → Connect to Git → Framework preset:
   None → Build command: (để trống) → Output directory: `/`*
-<<<<<<< Updated upstream
+
 =======
 
-
->>>>>>> Stashed changes
